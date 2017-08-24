@@ -185,11 +185,6 @@ export
     NaN32,
     NaN64,
     im,
-    π, pi,
-    e, eu,
-    γ, eulergamma,
-    catalan,
-    φ, golden,
     I,
 
 # Operators
