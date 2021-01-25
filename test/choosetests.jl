@@ -33,29 +33,108 @@ in the `choices` argument:
 """
 function choosetests(choices = [])
     testnames = [
-        "subarray", "core", "compiler", "worlds",
-        "keywordargs", "numbers", "subtype",
-        "char", "strings", "triplequote", "unicode", "intrinsics",
-        "dict", "hashing", "iobuffer", "staged", "offsetarray",
-        "arrayops", "tuple", "reduce", "reducedim", "abstractarray",
-        "intfuncs", "simdloop", "vecelement", "rational",
-        "bitarray", "copy", "math", "fastmath", "functional", "iterators",
-        "operators", "ordering", "path", "ccall", "parse", "loading", "gmp",
-        "sorting", "spawn", "backtrace", "exceptions",
-        "file", "read", "version", "namedtuple",
-        "mpfr", "broadcast", "complex",
-        "floatapprox", "stdlib", "reflection", "regex", "float16",
-        "combinatorics", "sysinfo", "env", "rounding", "ranges", "mod2pi",
-        "euler", "show", "client",
-        "errorshow", "sets", "goto", "llvmcall", "llvmcall2", "ryu",
-        "some", "meta", "stacktraces", "docs",
-        "misc", "threads", "stress", "binaryplatforms", "atexit",
-        "enums", "cmdlineargs", "int", "interpreter",
-        "checked", "bitset", "floatfuncs", "precompile",
-        "boundscheck", "error", "ambiguous", "cartesian", "osutils",
-        "channels", "iostream", "secretbuffer", "specificity",
-        "reinterpretarray", "syntax", "corelogging", "missing", "asyncmap",
-        "smallarrayshrink"
+        "subarray",
+        "core",
+        # "compiler",
+        # "worlds",
+        "keywordargs",
+        "numbers",
+        "subtype",
+        "char",
+        "strings",
+        "triplequote",
+        "unicode",
+        "intrinsics", # ? 
+        "dict",
+        "hashing",
+        # "iobuffer",
+        "staged", # ? 
+        # "offsetarray",
+        "arrayops",
+        "tuple",
+        "reduce",
+        "reducedim",
+        "abstractarray",
+        "intfuncs",
+        # "simdloop",
+        # "vecelement",
+        # "rational",
+        "bitarray",
+        "copy",
+        "math",
+        # "fastmath",
+        "functional", # ? 
+        "iterators",
+        "operators",
+        "ordering",
+        "path", # ? 
+        "ccall", # ? 
+        "parse", # ? 
+        "loading",
+        # "gmp",
+        "sorting",
+        # "spawn",
+        "backtrace",
+        "exceptions",
+        "file",
+        "read",
+        "version",
+        "namedtuple",
+        # "mpfr",
+        "broadcast",
+        "complex",
+        "floatapprox",
+        # "stdlib", # off for now
+        "reflection",
+        "regex",
+        "float16",
+        # "combinatorics",
+        "sysinfo", # ? 
+        "env", # ? 
+        "rounding",
+        "ranges",
+        "mod2pi",
+        "euler",
+        "show",
+        "client", # ? 
+        "errorshow",
+        "sets",
+        "goto",
+        # "llvmcall",
+        # "llvmcall2",
+        # "ryu",
+        "some",
+        "meta", # ? 
+        "stacktraces",
+        # "docs",
+        "misc", # ? 
+        "threads",
+        "stress", # ? 
+        # "binaryplatforms",
+        # "atexit",
+        "enums",
+        "cmdlineargs", # ? 
+        "int",
+        "interpreter", # ? 
+        "checked", # ? 
+        "bitset",
+        "floatfuncs",
+        # "precompile",
+        "boundscheck",
+        "error",
+        "ambiguous",
+        "cartesian",
+        "osutils", # ? 
+        "channels",
+        "iostream", # ? 
+        "secretbuffer", # ? 
+        "specificity",
+        # "reinterpretarray",
+        "syntax",
+        "corelogging",
+        # "missing",
+        # "asyncmap", # off for now
+        "smallarrayshrink" # ? 
     ]
 
     tests = []
