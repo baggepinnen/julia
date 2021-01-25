@@ -44,11 +44,11 @@ function choosetests(choices = [])
         "strings",
         "triplequote",
         "unicode",
-        "intrinsics", # ? 
+        "intrinsics", # ? tests e.g. Core.Intrinsics.add_int, if core is tested, this is also tested
         "dict",
         "hashing",
         # "iobuffer",
-        "staged", # ? 
+        # "staged", # ? generated functions etc., off for now
         # "offsetarray",
         "arrayops",
         "tuple",
@@ -63,14 +63,14 @@ function choosetests(choices = [])
         "copy",
         "math",
         # "fastmath",
-        "functional", # ? 
+        "functional", # ? higher-order funs
         "iterators",
         "operators",
         "ordering",
-        "path", # ? 
+        "path", # ? abspath, isdirpath, isdirpath etc.
         "ccall", # ? 
-        "parse", # ? 
-        "loading",
+        "parse", # ? e.g. parse(Int,"0")
+        "loading", # e.g., @__LINE__, uuid, Project.toml etc.
         # "gmp",
         "sorting",
         # "spawn",
@@ -84,19 +84,19 @@ function choosetests(choices = [])
         "broadcast",
         "complex",
         "floatapprox",
-        # "stdlib", # off for now
+        # "stdlib", # can't find file
         "reflection",
         "regex",
         "float16",
-        # "combinatorics",
-        "sysinfo", # ? 
-        "env", # ? 
+        "combinatorics",
+        "sysinfo", # ? rm llvm specifics
+        "env", # environment variables
         "rounding",
         "ranges",
         "mod2pi",
         "euler",
         "show",
-        "client", # ? 
+        # "client", # REPL etc.
         "errorshow",
         "sets",
         "goto",
@@ -104,19 +104,19 @@ function choosetests(choices = [])
         # "llvmcall2",
         # "ryu",
         "some",
-        "meta", # ? 
+        "meta", # @inline, escaping, compiler hints, Meta submodule
         "stacktraces",
         # "docs",
-        "misc", # ? 
+        "misc", # TODO: some gc, finalizer, task switching
         "threads",
-        "stress", # ? 
+        # "stress", # os specific
         # "binaryplatforms",
         # "atexit",
         "enums",
-        "cmdlineargs", # ? 
+        # "cmdlineargs", # off for now
         "int",
-        "interpreter", # ? 
-        "checked", # ? 
+        # "interpreter", # when julia is launched with --compile=min
+        "checked", # checked_add etc.
         "bitset",
         "floatfuncs",
         # "precompile",
@@ -124,17 +124,17 @@ function choosetests(choices = [])
         "error",
         "ambiguous",
         "cartesian",
-        "osutils", # ? 
+        "osutils", # deactivated os specifics, Sys.isunix etc.
         "channels",
-        "iostream", # ? 
-        "secretbuffer", # ? 
+        # "iostream", # off for now
+        # "secretbuffer", # off for now
         "specificity",
         # "reinterpretarray",
         "syntax",
         "corelogging",
         # "missing",
         # "asyncmap", # off for now
-        "smallarrayshrink" # ? 
+        "smallarrayshrink" # special handling for small arrays
     ]
 
     tests = []
