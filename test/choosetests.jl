@@ -44,11 +44,11 @@ function choosetests(choices = [])
         "strings",
         "triplequote",
         "unicode",
-        "intrinsics", # ? tests e.g. Core.Intrinsics.add_int, if core is tested, this is also tested
+        "intrinsics", # tests e.g. Core.Intrinsics.add_int, if core is tested, this is also tested
         "dict",
         "hashing",
         # "iobuffer",
-        # "staged", # ? generated functions etc., off for now
+        # "staged", # generated functions etc., off for now
         # "offsetarray",
         "arrayops",
         "tuple",
@@ -63,13 +63,13 @@ function choosetests(choices = [])
         "copy",
         "math",
         # "fastmath",
-        "functional", # ? higher-order funs
+        "functional", # higher-order funs
         "iterators",
         "operators",
         "ordering",
-        "path", # ? abspath, isdirpath, isdirpath etc.
-        "ccall", # ? 
-        "parse", # ? e.g. parse(Int,"0")
+        "path", # abspath, isdirpath, isdirpath etc.
+        "ccall", # on for now
+        "parse", # e.g. parse(Int,"0")
         "loading", # e.g., @__LINE__, uuid, Project.toml etc.
         # "gmp",
         "sorting",
@@ -77,19 +77,19 @@ function choosetests(choices = [])
         "backtrace",
         "exceptions",
         "file",
-        "read",
+        # "read", IO and file reading etc.
         "version",
         "namedtuple",
         # "mpfr",
         "broadcast",
         "complex",
         "floatapprox",
-        # "stdlib", # can't find file
+        # "stdlib", # denotes the stdlib folder. Deactivated for now
         "reflection",
         "regex",
         "float16",
         "combinatorics",
-        "sysinfo", # ? rm llvm specifics
+        "sysinfo", # rm llvm specifics
         "env", # environment variables
         "rounding",
         "ranges",
@@ -108,7 +108,7 @@ function choosetests(choices = [])
         "stacktraces",
         # "docs",
         "misc", # TODO: some gc, finalizer, task switching
-        "threads",
+        # "threads",
         # "stress", # os specific
         # "binaryplatforms",
         # "atexit",
